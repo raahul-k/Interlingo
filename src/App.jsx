@@ -3,6 +3,7 @@ import Heading from "./components/Heading";
 import TextArea from "./components/TextArea";
 import { useState, useEffect } from "react";
 import { detectedLang, translatedText, allLangs } from "./translate";
+import React from "react";
 
 function App() {
   const [result, setResult] = useState(null);
