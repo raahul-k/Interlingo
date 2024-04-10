@@ -1,0 +1,67 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+}
+
+select {
+  width: 100%;
+  content: "▼";
+  padding: 20px;
+  border: 0.5px solid rgba(128, 128, 128, 0.309);
+  border-radius: 5px;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 15px;
+  appearance: none;
+}
+
+select::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+textarea {
+  border: 0.5px solid rgba(128, 128, 128, 0.309);
+  border-radius: 5px;
+  text-align: left;
+  resize: none;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-family: favorites;
+  font-size: 16px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0;
+}
+
+textarea::-webkit-resizer,
+textarea::-moz-resizer,
+textarea::-ms-resizer {
+  display: none;
+}
+
+#toText {
+  background-color: rgba(128, 128, 128, 0.096);
+  border: none;
+}
+#toText::placeholder {
+  color: rgb(92, 92, 92);
+}
+
+.detectedLang {
+  width: 100%;
+  padding: 20px;
+  border: 0.5px solid rgba(128, 128, 128, 0.309);
+  border-radius: 5px;
+}
