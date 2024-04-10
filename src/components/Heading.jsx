@@ -7,6 +7,7 @@ const Heading = (props) => {
   const [language, setLanguage] = useState("");
 
   useEffect(() => {
+    console.log("Useeffect ran");
     for (let i = 20; i < 40; i++) {
       setTimeout(async () => {
         const code = result[i].language;
