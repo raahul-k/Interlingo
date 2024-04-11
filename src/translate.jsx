@@ -1,8 +1,8 @@
 import axios from "axios";
+import dotenv from "dotenv";
+dotenv.config();
 
-const API_KEY = "AIzaSyCMG7QHJETLu7Kbj_73D8ovcR4JHrSM6lk";
-const API_URL =
-  "https://translate.googleapis.com/v3beta1/practice-417307:translateText";
+const API_KEY = process.env.API_KEY;
 const TRANSLATE_LANG_URL =
   "https://translation.googleapis.com/language/translate/v2";
 const DETECT_LANG_URL =
