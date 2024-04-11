@@ -2,7 +2,7 @@ import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.REACT_APP_API_KEY;
 const TRANSLATE_LANG_URL =
   "https://translation.googleapis.com/language/translate/v2";
 const DETECT_LANG_URL =
