@@ -1,7 +1,8 @@
 import "../styles/components/Box.css";
 import { useEffect, useState } from "react";
-import { detectedLang, translatedText } from "../translate";
+import { detectedLang, translatedText } from "../translate.js";
 import he from "he";
+import React from "react";
 
 const TextArea = (props) => {
   const result = props.result;

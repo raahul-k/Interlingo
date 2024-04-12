@@ -1,6 +1,7 @@
 import "../styles/components/Heading.css";
-import { translatedText } from "../translate";
+import { translatedText } from "../translate.js";
 import { useState, useEffect, useRef } from "react";
+import React from "react";
 
 const Heading = (props) => {
   const result = props.result;
