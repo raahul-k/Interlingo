@@ -1,7 +1,6 @@
 import axios from "axios";
-import React from "react";
 
-const API_KEY = "AIzaSyCMG7QHJETLu7Kbj_73D8ovcR4JHrSM6lk";
+const API_KEY = import.meta.env.VITE_API_KEY;
 const TRANSLATE_LANG_URL =
   "https://translation.googleapis.com/language/translate/v2";
 const DETECT_LANG_URL =
