@@ -1,6 +1,4 @@
 import axios from "axios";
-import dotenv from "dotenv";
-dotenv.config();
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 const TRANSLATE_LANG_URL =
