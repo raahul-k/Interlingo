@@ -15,9 +15,7 @@ function App() {
   return (
     <div className="app">
       {result && <Heading result={result}></Heading>}
-      <div className="textarea">
-        {result && <TextArea result={result}></TextArea>}
-      </div>
+      {result && <TextArea result={result}></TextArea>}
     </div>
   );
 }

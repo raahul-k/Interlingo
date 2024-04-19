@@ -1,19 +1,21 @@
-.box {
+.language-panel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2vw;
+}
+.text-area {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 20px;
-  width: 90%;
 }
 
 select {
-  width: 100%;
-  content: "▼";
   padding: 20px;
+  width: 50%;
   border: 0.5px solid rgba(128, 128, 128, 0.309);
   border-radius: 5px;
-  background: transparent;
   background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
   background-repeat: no-repeat;
   background-position-x: 100%;
@@ -21,47 +23,42 @@ select {
   appearance: none;
 }
 
-select::after {
-  content: "▼";
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
 textarea {
   border: 0.5px solid rgba(128, 128, 128, 0.309);
-  border-radius: 5px;
+  width: 100%;
   text-align: left;
   resize: none;
-  width: 100%;
   padding: 0.5rem 1rem;
   font-family: favorites;
-  font-size: 16px;
+  border-radius: 5px 5px 0 0;
 }
 
-textarea::-webkit-scrollbar {
-  width: 0;
-}
-
-textarea::-webkit-resizer,
-textarea::-moz-resizer,
-textarea::-ms-resizer {
-  display: none;
+.textarea {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #toText {
   background-color: rgba(128, 128, 128, 0.096);
-  border: none;
+  border: 0.5px solid rgba(128, 128, 128, 0.096);
+  border-radius: 0 0 5px 5px;
 }
 #toText::placeholder {
   color: rgb(92, 92, 92);
 }
 
-.detectedLang {
-  width: 100%;
-  padding: 20px;
-  border: 0.5px solid rgba(128, 128, 128, 0.309);
-  border-radius: 5px;
+@media (min-width: 648px) {
+  .text-area {
+    flex-direction: row;
+    gap: 2vw;
+  }
+
+  textarea {
+    border-radius: 5px;
+  }
+  #toText {
+    border-radius: 5px;
+  }
 }

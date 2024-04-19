@@ -1,7 +1,13 @@
 .heading {
   display: flex;
-  gap: 50px;
   align-items: center;
-  justify-content: center;
-  text-align: left;
+  gap: 20px;
+}
+
+.slash {
+  height: 2.8em;
+  border: 5px solid #213547;
+}
+.slash::before {
+  content: "";
 }

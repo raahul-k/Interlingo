@@ -1,4 +1,4 @@
-import "../styles/components/Box.css";
+import "../styles/components/TextArea.css";
 import { useEffect, useState } from "react";
 import { detectedLang, translatedText } from "../translate.js";
 import he from "he";
@@ -23,7 +23,7 @@ const TextArea = (props) => {
 
   return (
     <div className="textarea">
-      <div className="box">
+      <div className="language-panel">
         <select
           name="from"
           id="from"
@@ -36,23 +36,6 @@ const TextArea = (props) => {
             return <option key={index}>{language.name}</option>;
           })}
         </select>
-        <textarea
-          id="fromText"
-          placeholder="Enter text"
-          onChange={(e) => {
-            setInput(e.target.value);
-            detectedLang(e.target.value).then((lang) => {
-              if (lang !== "und") {
-                let newLang = result.filter((languageObj) => {
-                  return languageObj.language === lang;
-                })[0].name;
-                setInputLang(newLang);
-              }
-            });
-          }}
-        ></textarea>
-      </div>
-      <div className="box">
         <select
           name="to"
           id="to"
@@ -69,6 +52,24 @@ const TextArea = (props) => {
             return <option key={index}>{language.name}</option>;
           })}
         </select>
+      </div>
+      <div className="text-area">
+        <textarea
+          id="fromText"
+          placeholder="Enter text"
+          onChange={(e) => {
+            setInput(e.target.value);
+            detectedLang(e.target.value).then((lang) => {
+              if (lang !== "und") {
+                let newLang = result.filter((languageObj) => {
+                  return languageObj.language === lang;
+                })[0].name;
+                setInputLang(newLang);
+              }
+            });
+          }}
+        ></textarea>
+
         <textarea
           id="toText"
           placeholder="Translation"
