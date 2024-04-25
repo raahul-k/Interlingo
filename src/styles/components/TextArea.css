@@ -140,12 +140,12 @@ ul {
   right: 10px;
   cursor: pointer;
 }
-i {
-  rotate: 180;
-  background-color: white;
-  padding: 5px 3px;
-  border-radius: 5px;
-  border: 0.5px solid rgba(128, 128, 128, 0.309);
-  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.309);
+img {
+  width: 20px;
+  height: 20px;
+  transform: rotateY(180deg);
   cursor: pointer;
+  background-color: #f3f3f3;
+  padding: 5px;
+  border-radius: 5px;
 }

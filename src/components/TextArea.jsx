@@ -89,7 +89,7 @@ const TextArea = (props) => {
         <input
           type="text"
           placeholder={placeholder}
-          autofocus
+          autoFocus
           onChange={(e) => {
             handleSearch(allLanguages, e.target.value);
           }}
@@ -173,12 +173,13 @@ const TextArea = (props) => {
           }}
         ></textarea>
         <div className="copy-button">
-          <i
-            className="fa-regular fa-copy"
+          <img
+            src="../../public/copy-link-icon.svg"
+            alt=""
             onClick={(e) => {
               copyTranslatedText(outputTextArea);
             }}
-          ></i>
+          />
         </div>
       </div>
       <div className="copy-msg">{copyMessage}</div>
