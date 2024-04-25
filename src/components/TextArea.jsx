@@ -174,7 +174,7 @@ const TextArea = (props) => {
         ></textarea>
         <div className="copy-button">
           <img
-            src="../../public/copy-link-icon.svg"
+            src="copy-link-icon.svg"
             alt=""
             onClick={(e) => {
               copyTranslatedText(outputTextArea);
