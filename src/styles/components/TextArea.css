@@ -149,3 +149,10 @@ img {
   padding: 5px;
   border-radius: 5px;
 }
+
+@media (min-width: 648px) {
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
