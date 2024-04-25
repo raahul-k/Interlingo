@@ -140,7 +140,7 @@ ul {
   right: 10px;
   cursor: pointer;
 }
-img {
+.copy-icon {
   width: 20px;
   height: 20px;
   transform: rotateY(180deg);
@@ -151,8 +151,12 @@ img {
 }
 
 @media (min-width: 648px) {
-  img {
+  .copy-icon {
     width: 30px;
     height: 30px;
   }
+}
+
+#toText::selection {
+  background-color: transparent;
 }

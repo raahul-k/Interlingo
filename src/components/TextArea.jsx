@@ -174,6 +174,7 @@ const TextArea = (props) => {
         ></textarea>
         <div className="copy-button">
           <img
+            className="copy-icon"
             src="copy-link-icon.svg"
             alt=""
             onClick={(e) => {

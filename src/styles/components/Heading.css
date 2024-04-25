@@ -11,3 +11,9 @@
 .slash::before {
   content: "";
 }
+
+.logo {
+  width: 70px;
+  transform: rotateX("180deg");
+  height: auto;
+}
